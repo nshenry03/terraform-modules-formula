@@ -4,15 +4,11 @@
 # Set default values.
 ---
 values:
-  pkg:
-    name: terraform-modules
-  rootgroup: root
-  config: '/etc/terraform-modules'
-  service:
-    name: terraform-modules
-  subcomponent:
-    config: '/etc/terraform-modules-subcomponent-formula.conf'
-  # Just here for testing
-  added_in_defaults: defaults_value
-  winner: defaults
+  base_dir: /tmp
+
+  module:
+    name: foobar
+
+  terraform:
+    version: 1.5.5
 ...
